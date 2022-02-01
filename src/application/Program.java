@@ -31,10 +31,12 @@ public class Program {
 		
 		for(Seller obj : list) {
 		System.out.println(obj);
-
-
-
-	}
+		}
+		System.out.println("====Teste 4: Seller findAll ====");
+		Seller nv = new Seller(null, "Ana", "ana@gmail.com", new Date(), 4000.0, department);
+		sellerDao.insert(nv);
+		System.out.println("Inserted! new Id=" + nv.getId());
+	
 	}
 
 }
